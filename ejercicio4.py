@@ -26,7 +26,7 @@ answers = [
 correct_answers_index = [1, 2, 0, 3, 1]
 
 # Convierto listas en tupla
-questions_to_ask = random.choices(list(zip(questions, answers, correct_answers_index)), k=3)
+questions_to_ask = random.sample(list(zip(questions, answers, correct_answers_index)), k=3)
 
 puntaje = 0
 
